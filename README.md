@@ -87,7 +87,7 @@
          <li>Sua aplicação será executada na última versão do navegador Chrome;</li>
          <li>Ao finalizar, submeta o <a href="https://git-scm.com/docs/git-request-pull" target="_blank"><i>pull request</i></a>.</li>
       </ol>
-      <h2 id="rotas-do-webservice">Rotas do <i>webservice</i> (http://186.215.80.43:82/api)</h2>
+      <h2 id="rotas-do-webservice">Rotas do <i>webservice</i> (http://177.69.85.145:82/api)</h2>
       <h3></h3>
       <ul>
          <li>[GET]/ingredientes - Retorna todos os ingredientes.</li>
