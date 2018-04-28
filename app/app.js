@@ -1,12 +1,18 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('app', [
-  'ngRoute'			
-]).
+var app = angular.module('app', [
+  'ngRoute',
+  'ngResource'
+])
+app.
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
 
-  $routeProvider.otherwise({redirectTo: '/'});
+  $routeProvider.
+    when('/flavors', {
+      template: '<flavors></flavors>'
+    }).
+    otherwise('/flavors');
 
 }]);

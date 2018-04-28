@@ -1,0 +1,10 @@
+<h2>Escolha um sabor de pizza</h2>
+<div class="list-group">
+  <a
+    href="#"
+    class="list-group-item list-group-item-action"
+    ng-repeat="flavor in $ctrl.flavors | orderBy: $ctrl.orderProp"
+    >
+    {{flavor.sabor}}
+  </a>
+</div>
