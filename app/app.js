@@ -10,9 +10,12 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
   $locationProvider.hashPrefix('!');
 
   $routeProvider.
-    when('/flavors', {
+    when('/sabores', {
       template: '<flavors></flavors>'
     }).
-    otherwise('/flavors');
+    when('/ingredientes', {
+      template: '<ingredients></ingredients>'
+    }).
+    otherwise('/sabores');
 
 }]);
