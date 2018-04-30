@@ -7,7 +7,7 @@ var app = angular.module('app', [
 ])
 app.
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
+  $locationProvider.hashPrefix('');
 
   $routeProvider.
     when('/sabores', {
@@ -15,6 +15,9 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
     }).
     when('/ingredientes', {
       template: '<ingredients></ingredients>'
+    }).
+    when('/bordas', {
+      template: '<edges></edges>'
     }).
     otherwise('/sabores');
 
