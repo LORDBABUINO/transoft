@@ -19,6 +19,9 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
     when('/bordas', {
       template: '<edges></edges>'
     }).
+    when('/tamanhos', {
+      template: '<sizes></sizes>'
+    }).
     otherwise('/sabores');
 
 }]);
