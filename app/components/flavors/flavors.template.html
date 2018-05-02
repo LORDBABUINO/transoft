@@ -1,14 +1,16 @@
 <h2>Escolha um sabor de pizza</h2>
 <div class="list-group">
   <a
-    href="#"
+    href="#/bordas"
     class="list-group-item list-group-item-action"
     ng-repeat="flavor in $ctrl.flavors | orderBy: $ctrl.orderProp"
-    >
+    ng-click="$ctrl.storeFlavorId(flavor.id)"
+  >
     {{flavor.sabor}}
   </a>
   <a
     href="#/ingredientes"
     class="list-group-item list-group-item-action"
+    ng-click="$ctrl.clearStorage()"
   >Criar sabor</a>
 </div>

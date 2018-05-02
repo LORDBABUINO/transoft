@@ -3,7 +3,8 @@
 // Declare app level module which depends on views, and components
 var app = angular.module('app', [
   'ngRoute',
-  'ngResource'
+  'ngResource',
+  'checklist-model'
 ])
 app.
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
@@ -22,6 +23,9 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
     when('/tamanhos', {
       template: '<sizes></sizes>'
     }).
-    otherwise('/sabores');
+    when('/pedido', {
+      template: '<purchase></purchase>'
+    }).
+    otherwise({redirectTo: '/sabores'});
 
 }]);

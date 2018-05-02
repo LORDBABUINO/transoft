@@ -3,6 +3,7 @@
     href="#/tamanhos"
     class="list-group-item list-group-item-action"
     ng-repeat="edge in $ctrl.edges"
+    ng-click="$ctrl.storeEdgeId(edge.id)"
     >
     {{edge.borda}}
   </a>

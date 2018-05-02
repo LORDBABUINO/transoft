@@ -2,15 +2,19 @@
   <li
     class="list-group-item list-group-item-action"
     ng-repeat="ingredient in $ctrl.ingredients | orderBy: $ctrl.orderProp"
+  >
+    <input
+      type="checkbox"
+      checklist-model="$ctrl.ids"
+      checklist-value="ingredient.id"
     >
-    <input type="checkbox" name="ingredients" value="{{ingredient.id}}">
     {{ingredient.ingrediente}}
   </li>
 </ul>
 <button
   type="button"
   class="btn btn-success"
-  ng-click="$ctrl.path('/bordas')"
+  ng-click="$ctrl.finish()"
 >
   Finalizar Sabor
 </button>

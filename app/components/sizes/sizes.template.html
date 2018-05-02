@@ -1,9 +1,10 @@
 <div class="list-group">
   <a
-    href="#"
+    href="#/pedido"
     class="list-group-item list-group-item-action"
     ng-repeat="size in $ctrl.sizes"
-    >
+    ng-click="$ctrl.storeSizeId(size.id)"
+  >
     {{size.tamanho}}
   </a>
 </div>
